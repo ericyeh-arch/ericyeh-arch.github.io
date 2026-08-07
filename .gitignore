@@ -3,6 +3,7 @@ make_youtube_vibe_code_ppt.py
 work/youtube/*.info.json
 work/youtube/*.vtt
 work/youtube/*.webp
+work/presentations/
 
 # OS/editor noise
 .DS_Store
