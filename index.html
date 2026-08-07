@@ -3,197 +3,214 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vibe Code 到 GitHub Pages 互動指南</title>
+    <title>AI 人工智慧與 Python 的歷史</title>
+    <meta
+      name="description"
+      content="適合初學者閱讀的 AI 人工智慧與 Python 歷史互動式靜態網站。"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <nav class="topbar" aria-label="主要導覽">
-        <div class="brand">Vibe Deploy</div>
-        <div class="navlinks">
-          <a href="#workflow">流程</a>
-          <a href="#prompt">提示詞</a>
-          <a href="#checklist">檢查</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="主要導覽">
+        <a class="brand" href="#home">AI x Python</a>
+        <div class="nav-links">
+          <a href="#intro">重點介紹</a>
+          <a href="#timeline">時間線</a>
+          <a href="#resources">延伸資源</a>
         </div>
       </nav>
-
-      <div class="hero-grid">
-        <section class="hero-copy">
-          <p class="eyebrow">YouTube 影片整理</p>
-          <h1>用 Vibe Code 生成網頁，再用 GitHub Pages 免費上架</h1>
-          <p class="lead">
-            把 AI 產出的本機靜態網站，整理成可分享的公開網址。這個互動頁把影片重點拆成流程、提示詞、部署設定與驗收清單。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#workflow">開始操作</a>
-            <a class="button secondary" href="outputs/vibe-code-github-pages-ppt.pptx">下載 PPT</a>
-          </div>
-        </section>
-
-        <aside class="video-panel" aria-label="影片來源">
-          <img src="work/youtube/LpJ-tq8pwwM.png" alt="影片縮圖" />
-          <div>
-            <strong>來源影片</strong>
-            <span>程式猿（AFA）｜4:17｜2025-12-06</span>
-          </div>
-        </aside>
-      </div>
     </header>
 
     <main>
-      <section class="section intro" aria-labelledby="goal-title">
-        <div>
-          <p class="section-kicker">核心目標</p>
-          <h2 id="goal-title">先生成可部署的靜態網站，再讓 GitHub Pages 提供公開 URL。</h2>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">給初學者的現代科技史</p>
+          <h1>AI 的想像，遇上 Python 的實作能力</h1>
+          <p class="lead">
+            人工智慧不是突然出現的奇蹟，Python 也不是一開始就為 AI 而生。這個網頁用清楚的時間線與互動卡片，帶你看懂兩者如何在幾十年內走到今天。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#timeline">探索時間線</a>
+            <a class="button secondary" href="#resources">查看學習資源</a>
+          </div>
         </div>
-        <div class="stat-strip">
-          <div>
-            <span>01</span>
-            <strong>AI 生成</strong>
-            <p>用 Google Antigravity 或類似工具建立 HTML、CSS、JavaScript。</p>
+        <div class="hero-visual" aria-label="AI 與 Python 概念視覺">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="code-card">
+            <span class="dot-row"><i></i><i></i><i></i></span>
+            <pre><code>model.learn(data)
+python.build(tools)
+humans.ask(why)</code></pre>
           </div>
-          <div>
-            <span>02</span>
-            <strong>本機驗收</strong>
-            <p>直接開啟 index.html，確認內容、版面與互動能運作。</p>
-          </div>
-          <div>
-            <span>03</span>
-            <strong>公開部署</strong>
-            <p>上傳 GitHub repository，啟用 Pages 後取得網址。</p>
-          </div>
+          <div class="mini-card top">1956 AI 命名</div>
+          <div class="mini-card bottom">1991 Python 發布</div>
         </div>
       </section>
 
-      <section id="workflow" class="section" aria-labelledby="workflow-title">
+      <section id="intro" class="section">
         <div class="section-heading">
-          <p class="section-kicker">Workflow</p>
-          <h2 id="workflow-title">四個階段都有明確產物</h2>
+          <p class="eyebrow">重點介紹</p>
+          <h2>AI 與 Python 的關係，可以從三件事理解</h2>
         </div>
-        <div class="timeline" role="list">
-          <button class="timeline-step active" type="button" data-step="0">
-            <span>1</span>
-            下提示詞
-          </button>
-          <button class="timeline-step" type="button" data-step="1">
-            <span>2</span>
-            取出檔案
-          </button>
-          <button class="timeline-step" type="button" data-step="2">
-            <span>3</span>
-            建立 Repo
-          </button>
-          <button class="timeline-step" type="button" data-step="3">
-            <span>4</span>
-            啟用 Pages
-          </button>
+        <div class="concept-grid">
+          <article class="concept-card">
+            <span>01</span>
+            <h3>AI 是讓機器展現智能行為的研究領域</h3>
+            <p>
+              從早期的符號推理、專家系統，到今天的機器學習與生成式 AI，核心問題一直是：如何讓電腦從規則、資料或互動中做出有用判斷。
+            </p>
+          </article>
+          <article class="concept-card">
+            <span>02</span>
+            <h3>Python 讓想法更容易變成可執行的實驗</h3>
+            <p>
+              Python 語法簡潔，適合快速試作。隨著 NumPy、Pandas、scikit-learn、TensorFlow、PyTorch 等工具成熟，Python 成為 AI 開發的重要語言。
+            </p>
+          </article>
+          <article class="concept-card">
+            <span>03</span>
+            <h3>資料、算力與開源社群把兩者推向主流</h3>
+            <p>
+              大量資料、GPU、雲端平台與開源套件，讓研究成果更快被複製、改良和產品化，也讓初學者能以較低門檻開始學習。
+            </p>
+          </article>
         </div>
-        <article class="step-detail" aria-live="polite">
-          <p class="step-label">STEP 1</p>
-          <h3>要求 AI 產生靜態網站</h3>
-          <p>提示詞要指定「靜態網站」、「繁體中文」、「可直接在瀏覽器開啟」，避免產出需要後端或資料庫的方案。</p>
+      </section>
+
+      <section class="section split-section">
+        <div>
+          <p class="eyebrow">互動理解</p>
+          <h2>選一個視角，看 AI 歷史如何改變</h2>
+          <p>
+            同一段歷史可以用不同方式閱讀。選擇你最在意的視角，右側會切換成對應的學習重點。
+          </p>
+          <div class="view-tabs" role="tablist" aria-label="歷史視角">
+            <button class="tab active" type="button" data-view="ideas">思想</button>
+            <button class="tab" type="button" data-view="tools">工具</button>
+            <button class="tab" type="button" data-view="people">學習者</button>
+          </div>
+        </div>
+        <article class="view-panel" aria-live="polite">
+          <h3>從「能不能思考」到「如何解決問題」</h3>
+          <p>
+            AI 早期關注機器是否能像人一樣推理。後來研究重心逐步轉向資料、模型、機率與學習方法，今天則更重視可靠性、應用場景與人機協作。
+          </p>
           <ul>
-            <li>產物：明確提示詞</li>
-            <li>驗收：AI 回覆的技術方案只有前端檔案</li>
+            <li>適合先理解 AI 的大問題與演進脈絡</li>
+            <li>能看出每一次技術浪潮背後的限制</li>
           </ul>
         </article>
       </section>
 
-      <section id="prompt" class="section prompt-lab" aria-labelledby="prompt-title">
+      <section id="timeline" class="section timeline-section">
         <div class="section-heading">
-          <p class="section-kicker">Prompt Lab</p>
-          <h2 id="prompt-title">產生一段可直接使用的 Vibe Coding 提示詞</h2>
+          <p class="eyebrow">時間線</p>
+          <h2>從 AI 命名到 Python 成為資料科學主力</h2>
         </div>
-        <div class="prompt-grid">
-          <form class="prompt-form">
-            <label>
-              網站主題
-              <input id="topicInput" type="text" value="AI 人工智慧與 Python 的歷史" />
-            </label>
-            <label>
-              視覺風格
-              <select id="styleInput">
-                <option>精美、現代、適合初學者閱讀</option>
-                <option>專業、簡潔、適合簡報展示</option>
-                <option>活潑、互動、適合課堂教學</option>
-              </select>
-            </label>
-            <label>
-              需要頁面
-              <input id="pagesInput" type="text" value="首頁、重點介紹、時間線、延伸資源" />
-            </label>
-            <label class="checkbox-row">
-              <input id="responsiveInput" type="checkbox" checked />
-              手機與桌機都要能正常閱讀
-            </label>
-          </form>
-          <div class="prompt-output">
-            <div class="output-head">
-              <strong>提示詞</strong>
-              <button id="copyPrompt" type="button">複製</button>
-            </div>
-            <pre id="promptText"></pre>
-          </div>
+        <div class="timeline-controls" aria-label="時間線篩選">
+          <button class="filter active" type="button" data-filter="all">全部</button>
+          <button class="filter" type="button" data-filter="ai">AI</button>
+          <button class="filter" type="button" data-filter="python">Python</button>
+          <button class="filter" type="button" data-filter="data">資料與深度學習</button>
+        </div>
+        <div class="timeline-list">
+          <article class="timeline-item" data-type="ai">
+            <time>1950</time>
+            <h3>圖靈提出「機器能思考嗎？」</h3>
+            <p>Alan Turing 用模仿遊戲思考機器智能，為日後 AI 討論奠定重要問題意識。</p>
+          </article>
+          <article class="timeline-item" data-type="ai">
+            <time>1956</time>
+            <h3>Dartmouth 會議讓 AI 成為正式研究領域</h3>
+            <p>「Artificial Intelligence」一詞開始被廣泛使用，研究者相信機器推理有機會被系統化。</p>
+          </article>
+          <article class="timeline-item" data-type="ai">
+            <time>1980s</time>
+            <h3>專家系統興起，也暴露維護成本</h3>
+            <p>以人類專家規則建立系統曾經熱門，但知識更新困難，促使後來更多研究轉向資料驅動。</p>
+          </article>
+          <article class="timeline-item" data-type="python">
+            <time>1991</time>
+            <h3>Guido van Rossum 發布 Python</h3>
+            <p>Python 強調可讀性與開發效率，逐步吸引教育、科學運算、自動化與網路開發社群。</p>
+          </article>
+          <article class="timeline-item" data-type="data">
+            <time>2006-2012</time>
+            <h3>深度學習重新升溫</h3>
+            <p>更大的資料集、GPU 與神經網路方法讓語音、影像辨識出現突破，帶動新一波 AI 熱潮。</p>
+          </article>
+          <article class="timeline-item" data-type="python">
+            <time>2010s</time>
+            <h3>Python 成為資料科學與機器學習主力</h3>
+            <p>NumPy、Pandas、Jupyter、scikit-learn 等工具形成完整工作流，降低資料分析與模型訓練門檻。</p>
+          </article>
+          <article class="timeline-item" data-type="data">
+            <time>2017</time>
+            <h3>Transformer 架構改變自然語言處理</h3>
+            <p>注意力機制讓模型能更有效處理序列資料，後續大型語言模型多建立在相關概念上。</p>
+          </article>
+          <article class="timeline-item" data-type="ai">
+            <time>2020s</time>
+            <h3>生成式 AI 進入日常工具</h3>
+            <p>文字、圖像、程式碼生成工具快速普及，Python 仍是研究、串接 API、資料處理與原型開發的重要工具。</p>
+          </article>
         </div>
       </section>
 
-      <section class="section compare" aria-labelledby="compare-title">
+      <section id="resources" class="section resources-section">
         <div class="section-heading">
-          <p class="section-kicker">GitHub Pages 限制</p>
-          <h2 id="compare-title">先判斷你的網站是不是靜態網站</h2>
+          <p class="eyebrow">延伸資源</p>
+          <h2>下一步可以這樣學</h2>
         </div>
-        <div class="compare-grid">
-          <div class="compare-box good">
-            <h3>適合 GitHub Pages</h3>
-            <ul>
-              <li>HTML、CSS、JavaScript</li>
-              <li>圖片、字型、前端素材</li>
-              <li>不需要登入與資料庫</li>
-              <li>直接開 index.html 可運作</li>
-            </ul>
-          </div>
-          <div class="compare-box caution">
-            <h3>不適合直接部署</h3>
-            <ul>
-              <li>需要後端伺服器</li>
-              <li>需要資料庫</li>
-              <li>需要登入或會員系統</li>
-              <li>依賴本機路徑或私有 API</li>
-            </ul>
-          </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <h3>先學 Python 基礎</h3>
+            <p>變數、條件、迴圈、函式、資料結構與檔案處理，是後續資料分析和 AI 實作的共同基礎。</p>
+          </article>
+          <article class="resource-card">
+            <h3>再學資料處理</h3>
+            <p>熟悉 CSV、表格資料、視覺化與基本統計。你會更容易理解模型為什麼需要乾淨資料。</p>
+          </article>
+          <article class="resource-card">
+            <h3>最後做小型 AI 專案</h3>
+            <p>例如文字分類、圖片分類、聊天機器人或資料預測。專案比單純看概念更能建立直覺。</p>
+          </article>
         </div>
       </section>
 
-      <section id="checklist" class="section deploy-check" aria-labelledby="check-title">
+      <section class="section upload-guide">
         <div class="section-heading">
-          <p class="section-kicker">Deploy Checklist</p>
-          <h2 id="check-title">勾選後確認部署進度</h2>
+          <p class="eyebrow">GitHub Pages</p>
+          <h2>需要上傳的檔案與部署方式</h2>
         </div>
-        <div class="check-layout">
-          <div class="progress-card">
-            <svg viewBox="0 0 120 120" aria-hidden="true">
-              <circle class="track" cx="60" cy="60" r="48"></circle>
-              <circle class="meter" cx="60" cy="60" r="48"></circle>
-            </svg>
-            <strong id="progressText">0%</strong>
-            <span>完成度</span>
+        <div class="upload-grid">
+          <div class="file-list">
+            <h3>需要上傳</h3>
+            <ul>
+              <li><code>index.html</code></li>
+              <li><code>styles.css</code></li>
+              <li><code>script.js</code></li>
+            </ul>
           </div>
-          <div class="checklist">
-            <label><input type="checkbox" /> 已確認首頁檔名是 index.html</label>
-            <label><input type="checkbox" /> Repository 設為 Public</label>
-            <label><input type="checkbox" /> 已上傳 HTML、CSS、JavaScript 與素材</label>
-            <label><input type="checkbox" /> 已 commit 所有檔案</label>
-            <label><input type="checkbox" /> Pages 選 Deploy from a branch</label>
-            <label><input type="checkbox" /> Actions 顯示部署成功</label>
-            <label><input type="checkbox" /> 公開 URL 可正常開啟</label>
+          <div class="steps-list">
+            <h3>部署步驟</h3>
+            <ol>
+              <li>在 GitHub 建立公開 repository。</li>
+              <li>把上述三個檔案放在 repository 根目錄。</li>
+              <li>進入 Settings > Pages。</li>
+              <li>Source 選 Deploy from a branch，Branch 選 main，Folder 選 /root。</li>
+              <li>儲存後等待 1 到 3 分鐘，開啟 GitHub Pages 提供的網址。</li>
+            </ol>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span>資料來源：YouTube 影片 LpJ-tq8pwwM、繁中字幕與影片描述。</span>
-      <a href="https://www.youtube.com/watch?v=LpJ-tq8pwwM">觀看原影片</a>
+      <span>AI x Python History</span>
+      <a href="#home">回到首頁</a>
     </footer>
 
     <script src="script.js"></script>
