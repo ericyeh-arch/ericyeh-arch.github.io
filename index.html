@@ -1,218 +1,155 @@
 <!doctype html>
 <html lang="zh-Hant">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI 人工智慧與 Python 的歷史</title>
-    <meta
-      name="description"
-      content="適合初學者閱讀的 AI 人工智慧與 Python 歷史互動式靜態網站。"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="主要導覽">
-        <a class="brand" href="#home">AI x Python</a>
-        <div class="nav-links">
-          <a href="#intro">重點介紹</a>
-          <a href="#timeline">時間線</a>
-          <a href="#resources">延伸資源</a>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibe Coding 課程教學網站</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">龍華科技大學課程教材整理</p>
+      <h1>Vibe Coding AI 協作應用系統設計</h1>
+    </div>
+    <nav class="nav-tabs" aria-label="主要分頁">
+      <button class="tab is-active" data-view="overview">總覽</button>
+      <button class="tab" data-view="lessons">三堂課</button>
+      <button class="tab" data-view="build">實作流程</button>
+      <button class="tab" data-view="reader">PDF</button>
+    </nav>
+  </header>
 
-    <main>
-      <section id="home" class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">給初學者的現代科技史</p>
-          <h1>AI 的想像，遇上 Python 的實作能力</h1>
-          <p class="lead">
-            人工智慧不是突然出現的奇蹟，Python 也不是一開始就為 AI 而生。這個網頁用清楚的時間線與互動卡片，帶你看懂兩者如何在幾十年內走到今天。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#timeline">探索時間線</a>
-            <a class="button secondary" href="#resources">查看學習資源!</a>
+  <main>
+    <section class="view is-active" id="overview">
+      <div class="overview-grid">
+        <section class="intro-panel">
+          <div class="intro-copy">
+            <p class="section-kicker">學習路線</p>
+            <h2>從 AI 協作概念，到行銷需求拆解，再完成 Firebase 後端與 GitHub Pages 部署。</h2>
+            <p>本網站依據四份教材整理：第一堂 Vibe Coding 應用概念、第二堂行銷需求與系統拆解、第三堂 Firebase 後端系統與 GitHub Pages 部署，以及第三堂黃雲龍老師實作筆記。</p>
           </div>
-        </div>
-        <div class="hero-visual" aria-label="AI 與 Python 概念視覺">
-          <div class="orb orb-one"></div>
-          <div class="orb orb-two"></div>
-          <div class="code-card">
-            <span class="dot-row"><i></i><i></i><i></i></span>
-            <pre><code>model.learn(data)
-python.build(tools)
-humans.ask(why)</code></pre>
+          <div class="stat-strip" aria-label="課程統計">
+            <span><strong>3</strong>堂主課</span>
+            <span><strong>4</strong>份文件</span>
+            <span><strong>170</strong>頁教材</span>
           </div>
-          <div class="mini-card top">1956 AI 命名</div>
-          <div class="mini-card bottom">1991 Python 發布</div>
-        </div>
-      </section>
+        </section>
 
-      <section id="intro" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">重點介紹</p>
-          <h2>AI 與 Python 的關係，可以從三件事理解</h2>
-        </div>
-        <div class="concept-grid">
-          <article class="concept-card">
-            <span>01</span>
-            <h3>AI 是讓機器展現智能行為的研究領域</h3>
-            <p>
-              從早期的符號推理、專家系統，到今天的機器學習與生成式 AI，核心問題一直是：如何讓電腦從規則、資料或互動中做出有用判斷。
-            </p>
-          </article>
-          <article class="concept-card">
-            <span>02</span>
-            <h3>Python 讓想法更容易變成可執行的實驗</h3>
-            <p>
-              Python 語法簡潔，適合快速試作。隨著 NumPy、Pandas、scikit-learn、TensorFlow、PyTorch 等工具成熟，Python 成為 AI 開發的重要語言。
-            </p>
-          </article>
-          <article class="concept-card">
-            <span>03</span>
-            <h3>資料、算力與開源社群把兩者推向主流</h3>
-            <p>
-              大量資料、GPU、雲端平台與開源套件，讓研究成果更快被複製、改良和產品化，也讓初學者能以較低門檻開始學習。
-            </p>
-          </article>
-        </div>
-      </section>
+        <section class="focus-panel">
+          <p class="section-kicker">本課完成品</p>
+          <h2>一個可登入、可部署、可迭代的 Web App 原型</h2>
+          <ol class="flow-list">
+            <li>用 Vibe Coding 建立 AI 協作開發節奏</li>
+            <li>把行銷目標拆成角色、資料、頁面與流程</li>
+            <li>接上 Firebase Authentication 與專案設定</li>
+            <li>上傳 GitHub Pages，回填 Firebase 授權網域</li>
+          </ol>
+        </section>
+      </div>
 
-      <section class="section split-section">
-        <div>
-          <p class="eyebrow">互動理解</p>
-          <h2>選一個視角，看 AI 歷史如何改變</h2>
-          <p>
-            同一段歷史可以用不同方式閱讀。選擇你最在意的視角，右側會切換成對應的學習重點。
-          </p>
-          <div class="view-tabs" role="tablist" aria-label="歷史視角">
-            <button class="tab active" type="button" data-view="ideas">思想</button>
-            <button class="tab" type="button" data-view="tools">工具</button>
-            <button class="tab" type="button" data-view="people">學習者</button>
+      <section class="lesson-cards" aria-label="課程卡片">
+        <article class="lesson-card">
+          <img src="assets/lesson1-cover.png" alt="第一堂 Vibe Coding 應用概念封面">
+          <div>
+            <p class="lesson-number">Lesson 01</p>
+            <h3>Vibe Coding 應用概念</h3>
+            <p>建立 AI 協作開發的共同語言：如何提問、如何拆任務、如何把想法變成可測試的系統。</p>
           </div>
-        </div>
-        <article class="view-panel" aria-live="polite">
-          <h3>從「能不能思考」到「如何解決問題」</h3>
-          <p>
-            AI 早期關注機器是否能像人一樣推理。後來研究重心逐步轉向資料、模型、機率與學習方法，今天則更重視可靠性、應用場景與人機協作。
-          </p>
-          <ul>
-            <li>適合先理解 AI 的大問題與演進脈絡</li>
-            <li>能看出每一次技術浪潮背後的限制</li>
-          </ul>
+        </article>
+        <article class="lesson-card">
+          <img src="assets/lesson2-cover.png" alt="第二堂行銷需求與系統拆解封面">
+          <div>
+            <p class="lesson-number">Lesson 02</p>
+            <h3>行銷需求與系統拆解</h3>
+            <p>從目標客群與轉換需求出發，整理頁面、資料欄位、使用者路徑與最小可行版本。</p>
+          </div>
+        </article>
+        <article class="lesson-card">
+          <img src="assets/lesson3-cover.png" alt="第三堂 Firebase 後端與 GitHub Pages 部署封面">
+          <div>
+            <p class="lesson-number">Lesson 03</p>
+            <h3>Firebase 後端與 GitHub Pages 部署</h3>
+            <p>完成登入註冊、Firebase 設定、GitHub Pages 發佈與授權網域設定。</p>
+          </div>
         </article>
       </section>
+    </section>
 
-      <section id="timeline" class="section timeline-section">
-        <div class="section-heading">
-          <p class="eyebrow">時間線</p>
-          <h2>從 AI 命名到 Python 成為資料科學主力</h2>
-        </div>
-        <div class="timeline-controls" aria-label="時間線篩選">
-          <button class="filter active" type="button" data-filter="all">全部</button>
-          <button class="filter" type="button" data-filter="ai">AI</button>
-          <button class="filter" type="button" data-filter="python">Python</button>
-          <button class="filter" type="button" data-filter="data">資料與深度學習</button>
-        </div>
-        <div class="timeline-list">
-          <article class="timeline-item" data-type="ai">
-            <time>1950</time>
-            <h3>圖靈提出「機器能思考嗎？」</h3>
-            <p>Alan Turing 用模仿遊戲思考機器智能，為日後 AI 討論奠定重要問題意識。</p>
-          </article>
-          <article class="timeline-item" data-type="ai">
-            <time>1956</time>
-            <h3>Dartmouth 會議讓 AI 成為正式研究領域</h3>
-            <p>「Artificial Intelligence」一詞開始被廣泛使用，研究者相信機器推理有機會被系統化。</p>
-          </article>
-          <article class="timeline-item" data-type="ai">
-            <time>1980s</time>
-            <h3>專家系統興起，也暴露維護成本</h3>
-            <p>以人類專家規則建立系統曾經熱門，但知識更新困難，促使後來更多研究轉向資料驅動。</p>
-          </article>
-          <article class="timeline-item" data-type="python">
-            <time>1991</time>
-            <h3>Guido van Rossum 發布 Python</h3>
-            <p>Python 強調可讀性與開發效率，逐步吸引教育、科學運算、自動化與網路開發社群。</p>
-          </article>
-          <article class="timeline-item" data-type="data">
-            <time>2006-2012</time>
-            <h3>深度學習重新升溫</h3>
-            <p>更大的資料集、GPU 與神經網路方法讓語音、影像辨識出現突破，帶動新一波 AI 熱潮。</p>
-          </article>
-          <article class="timeline-item" data-type="python">
-            <time>2010s</time>
-            <h3>Python 成為資料科學與機器學習主力</h3>
-            <p>NumPy、Pandas、Jupyter、scikit-learn 等工具形成完整工作流，降低資料分析與模型訓練門檻。</p>
-          </article>
-          <article class="timeline-item" data-type="data">
-            <time>2017</time>
-            <h3>Transformer 架構改變自然語言處理</h3>
-            <p>注意力機制讓模型能更有效處理序列資料，後續大型語言模型多建立在相關概念上。</p>
-          </article>
-          <article class="timeline-item" data-type="ai">
-            <time>2020s</time>
-            <h3>生成式 AI 進入日常工具</h3>
-            <p>文字、圖像、程式碼生成工具快速普及，Python 仍是研究、串接 API、資料處理與原型開發的重要工具。</p>
-          </article>
-        </div>
-      </section>
+    <section class="view" id="lessons">
+      <div class="section-heading">
+        <p class="section-kicker">課程內容</p>
+        <h2>每堂課的學習目標與交付物</h2>
+      </div>
+      <div class="lesson-detail-grid" id="lessonDetailGrid"></div>
+    </section>
 
-      <section id="resources" class="section resources-section">
-        <div class="section-heading">
-          <p class="eyebrow">延伸資源</p>
-          <h2>下一步可以這樣學</h2>
-        </div>
-        <div class="resource-grid">
-          <article class="resource-card">
-            <h3>先學 Python 基礎</h3>
-            <p>變數、條件、迴圈、函式、資料結構與檔案處理，是後續資料分析和 AI 實作的共同基礎。</p>
-          </article>
-          <article class="resource-card">
-            <h3>再學資料處理</h3>
-            <p>熟悉 CSV、表格資料、視覺化與基本統計。你會更容易理解模型為什麼需要乾淨資料。</p>
-          </article>
-          <article class="resource-card">
-            <h3>最後做小型 AI 專案</h3>
-            <p>例如文字分類、圖片分類、聊天機器人或資料預測。專案比單純看概念更能建立直覺。</p>
-          </article>
-        </div>
-      </section>
+    <section class="view" id="build">
+      <div class="section-heading">
+        <p class="section-kicker">實作流程</p>
+        <h2>Firebase + GitHub Pages 部署路徑</h2>
+      </div>
 
-      <section class="section upload-guide">
-        <div class="section-heading">
-          <p class="eyebrow">GitHub Pages</p>
-          <h2>需要上傳的檔案與部署方式</h2>
-        </div>
-        <div class="upload-grid">
-          <div class="file-list">
-            <h3>需要上傳</h3>
-            <ul>
-              <li><code>index.html</code></li>
-              <li><code>styles.css</code></li>
-              <li><code>script.js</code></li>
-            </ul>
-          </div>
-          <div class="steps-list">
-            <h3>部署步驟</h3>
-            <ol>
-              <li>在 GitHub 建立公開 repository。</li>
-              <li>把上述三個檔案放在 repository 根目錄。</li>
-              <li>進入 Settings > Pages。</li>
-              <li>Source 選 Deploy from a branch，Branch 選 main，Folder 選 /root。</li>
-              <li>儲存後等待 1 到 3 分鐘，開啟 GitHub Pages 提供的網址。</li>
-            </ol>
-          </div>
-        </div>
-      </section>
-    </main>
+      <div class="build-layout">
+        <aside class="checklist-panel">
+          <h3>進度檢核</h3>
+          <div id="checklist"></div>
+          <button class="ghost-button" id="resetProgress" type="button">重設進度</button>
+        </aside>
 
-    <footer class="footer">
-      <span>AI x Python History</span>
-      <a href="#home">回到首頁</a>
-    </footer>
+        <section class="timeline" aria-label="部署步驟">
+          <article class="step">
+            <img src="assets/firebase-config.png" alt="Firebase SDK 設定頁面截圖">
+            <div>
+              <span class="step-label">Step 1</span>
+              <h3>貼上 Firebase SDK 設定</h3>
+              <p>在 Gemini Canvas 或 Web App 程式碼中加入 Firebase 專案的 config，讓前端能連接 Authentication、資料庫或其他 Firebase 服務。</p>
+              <p class="note">公開網站時請確認金鑰、網域與專案權限符合課堂示範用途。</p>
+            </div>
+          </article>
+          <article class="step">
+            <img src="assets/login-requirements.png" alt="註冊登入頁面需求截圖">
+            <div>
+              <span class="step-label">Step 2</span>
+              <h3>完成註冊與登入頁面</h3>
+              <p>註冊頁面包含真實姓名、電子信箱與密碼；登入頁面包含電子信箱與密碼，並提供忘記密碼與管理頁面入口。</p>
+            </div>
+          </article>
+          <article class="step">
+            <img src="assets/github-pages.png" alt="GitHub Pages 上傳流程截圖">
+            <div>
+              <span class="step-label">Step 3</span>
+              <h3>建立 GitHub Repository 並發佈 Pages</h3>
+              <p>建立新的 repository，將產出的 `index.html` 上傳，啟用 Pages 後取得公開網址，用來測試前端與 Firebase 是否能正常連線。</p>
+            </div>
+          </article>
+          <article class="step">
+            <img src="assets/firebase-domain.png" alt="Firebase 授權網域設定截圖">
+            <div>
+              <span class="step-label">Step 4</span>
+              <h3>回填 Firebase 授權網域</h3>
+              <p>到 Firebase Authentication 的設定頁，加入 GitHub Pages 網域，避免登入或註冊時被授權網域擋下。</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="view" id="reader">
+      <div class="reader-header">
+        <div>
+          <p class="section-kicker">PDF 閱讀器</p>
+          <h2>切換教材原文</h2>
+        </div>
+        <select id="pdfSelect" aria-label="選擇 PDF 文件"></select>
+      </div>
+      <div class="reader-layout">
+        <div class="resource-list" id="resourceList"></div>
+        <iframe id="pdfFrame" title="PDF 教材預覽"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
 </html>
