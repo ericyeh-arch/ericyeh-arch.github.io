@@ -1,3 +1,55 @@
+const AUTH_USER = "ericyeh";
+const AUTH_PASS_HASH = "d2acecdcdeba2a478e21da72f0dd2623ee09027ed8a5dd0d739c564ee63bc61b";
+const AUTH_SESSION_KEY = "vibeCodingAuthenticated";
+
+const authScreen = document.querySelector("#authScreen");
+const authForm = document.querySelector("#authForm");
+const authUser = document.querySelector("#authUser");
+const authPass = document.querySelector("#authPass");
+const authError = document.querySelector("#authError");
+const logoutButton = document.querySelector("#logoutButton");
+
+async function sha256(text) {
+  const data = new TextEncoder().encode(text);
+  const digest = await crypto.subtle.digest("SHA-256", data);
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+function unlockSite() {
+  sessionStorage.setItem(AUTH_SESSION_KEY, "true");
+  document.body.classList.remove("auth-locked");
+  authScreen.classList.add("is-hidden");
+}
+
+function lockSite() {
+  sessionStorage.removeItem(AUTH_SESSION_KEY);
+  document.body.classList.add("auth-locked");
+  authScreen.classList.remove("is-hidden");
+  authPass.value = "";
+  authUser.focus();
+}
+
+if (sessionStorage.getItem(AUTH_SESSION_KEY) === "true") {
+  unlockSite();
+} else {
+  lockSite();
+}
+
+authForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  authError.textContent = "";
+  const isUserValid = authUser.value.trim() === AUTH_USER;
+  const isPassValid = await sha256(authPass.value) === AUTH_PASS_HASH;
+  if (isUserValid && isPassValid) {
+    unlockSite();
+    return;
+  }
+  authError.textContent = "帳號或通行碼不正確。";
+  authPass.select();
+});
+
+logoutButton.addEventListener("click", lockSite);
+
 const pdfs = [
   {
     title: "第一堂 Vibe Coding應用概念 (學員)",

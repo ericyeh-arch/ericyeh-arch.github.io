@@ -6,7 +6,25 @@
   <title>Vibe Coding 課程教學網站</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="auth-locked">
+  <section class="auth-screen" id="authScreen" aria-labelledby="authTitle">
+    <form class="auth-card" id="authForm">
+      <p class="section-kicker">身分驗證</p>
+      <h2 id="authTitle">請先登入課程網站</h2>
+      <p>輸入課程帳號與通行碼後，即可瀏覽教學內容與 PDF 教材。</p>
+      <label>
+        <span>帳號</span>
+        <input id="authUser" name="user" type="text" autocomplete="username" required>
+      </label>
+      <label>
+        <span>通行碼</span>
+        <input id="authPass" name="pass" type="password" autocomplete="current-password" required>
+      </label>
+      <p class="auth-error" id="authError" role="alert"></p>
+      <button class="auth-submit" type="submit">登入</button>
+      <p class="auth-hint">請向授課者索取課程通行碼。</p>
+    </form>
+  </section>
   <header class="topbar">
     <div>
       <p class="eyebrow">龍華科技大學課程教材整理</p>
@@ -18,6 +36,7 @@
       <button class="tab" data-view="build">實作流程</button>
       <button class="tab" data-view="reader">PDF</button>
     </nav>
+    <button class="logout-button" id="logoutButton" type="button">登出</button>
   </header>
 
   <main>

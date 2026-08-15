@@ -27,9 +27,98 @@ body {
   color: var(--ink);
 }
 
+body.auth-locked {
+  overflow: hidden;
+}
+
 button,
-select {
+select,
+input {
   font: inherit;
+}
+
+.auth-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background:
+    linear-gradient(90deg, rgba(247,248,246,.98), rgba(247,248,246,.84)),
+    url("assets/lesson1-cover.png") center / cover no-repeat;
+}
+
+.auth-screen.is-hidden {
+  display: none;
+}
+
+.auth-card {
+  width: min(460px, 100%);
+  padding: 30px;
+  background: rgba(255,255,255,.96);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.auth-card label {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+  color: #35404a;
+  font-weight: 800;
+}
+
+.auth-card input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.auth-card input:focus {
+  outline: 3px solid rgba(35, 94, 168, .18);
+  border-color: var(--blue);
+}
+
+.auth-submit,
+.logout-button {
+  min-height: 40px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.auth-submit {
+  width: 100%;
+  margin-top: 18px;
+  background: var(--green);
+  color: #fff;
+}
+
+.logout-button {
+  padding: 0 14px;
+  background: #fff;
+  border-color: var(--line);
+  color: var(--red);
+}
+
+.auth-error {
+  min-height: 24px;
+  margin: 10px 0 0;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.auth-hint {
+  margin: 12px 0 0;
+  font-size: .86rem;
+  color: var(--muted);
 }
 
 .topbar {
@@ -386,6 +475,10 @@ iframe {
 
   .nav-tabs {
     overflow-x: auto;
+  }
+
+  .logout-button {
+    width: 100%;
   }
 
   .overview-grid,
