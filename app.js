@@ -1,5 +1,5 @@
 const AUTH_USER = "ericyeh";
-const AUTH_PASS_HASH = "023737473a0e4125b0de9af8804f46bb568eeeb58daf414b3cc384e4e43b91ce";
+const AUTH_PASS_HASH = "a4fa0e1106aaa41238bf232c8611dbfd05891487bb241acb71933669286d5d5f";
 const AUTH_SESSION_KEY = "vibeCodingAuthenticated";
 
 const authScreen = document.querySelector("#authScreen");
